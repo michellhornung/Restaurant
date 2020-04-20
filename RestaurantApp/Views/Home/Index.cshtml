@@ -1,0 +1,82 @@
+﻿@section scripts {
+    <script>
+
+        var orders = 0;
+
+        $(document).ready(function () {
+            $('#errors').hide();
+            $("#submitOrder").click(function () {
+                getOrder();
+            });
+        });
+
+        function getOrder() {
+            var servingTime = $('#servingTime').val();
+            var dishes = $('#dishes').val();
+            if (!dishes) {
+                $('#errors').text("You must select at least one dish.");
+                $('#errors').show(500);
+                return false;
+            }
+            $.ajax({
+                type: "GET",
+                url: "/api/restaurant/" + servingTime + ',' + dishes,
+                success: function (data) {
+                    appendOrder(data);
+                    $('#errors').hide(500);
+                }
+            });
+        }
+
+        function appendOrder(data) {
+            var tr = '';
+            orders = orders + 1;
+            tr += '<tr>';
+            tr += ' <td>' + orders + '</td>'
+            tr += ' <td>' + data.dishes + '</td>'
+            tr += ' <td>' + data.message + '</td>'
+            tr += '</tr>';
+            $('#orderHistory').prepend(tr);
+        }
+
+
+    </script>
+}
+
+<h2>Orders</h2>
+<hr />
+<div id="errors" class="alert alert-danger" role="alert"></div>
+<div class="row">
+    <div class="col">
+        <label for="servingTime">Serving Time</label>
+        <select id="servingTime" class="form-control">
+            <option value="morning" selected>Morning</option>
+            <option value="night">Night</option>
+        </select>
+    </div>
+    <div class="col">
+        <label for="dishes">Dishes</label>
+        <input id="dishes" type="text" class="form-control">
+        <div class="invalid-feedback">
+            Please choose a username.
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col">
+        <button id="submitOrder" type="submit" class="btn btn-primary mt-3 float-right">Submit</button>
+    </div>
+</div>
+<hr />
+<h3>Order History</h3>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Order</th>
+            <th scope="col">Dishes</th>
+            <th scope="col">Observation</th>
+        </tr>
+    </thead>
+    <tbody id="orderHistory">
+    </tbody>
+</table>

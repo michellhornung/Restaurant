@@ -1,0 +1,71 @@
+﻿<Properties StartupConfiguration="{A21B866A-8AD3-4C1E-B8B6-7261E06C456E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RestaurantApp/RestaurantApp.csproj">
+    <Files>
+      <File FileName="RestaurantApp/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="RestaurantApp/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="RestaurantApp/Controllers/RestaurantController.cs" Line="1" Column="1" />
+      <File FileName="RestaurantApp/Properties/launchSettings.json" Line="27" Column="2" />
+      <File FileName="RestaurantModels/Dish.cs" Line="1" Column="1" />
+      <File FileName="RestaurantModels/DishType.cs" Line="1" Column="1" />
+      <File FileName="RestaurantModels/IMenu.cs" Line="1" Column="1" />
+      <File FileName="RestaurantModels/Meal.cs" Line="1" Column="1" />
+      <File FileName="RestaurantModels/Menu.cs" Line="1" Column="1" />
+      <File FileName="RestaurantService/IService.cs" Line="1" Column="1" />
+      <File FileName="RestaurantService/Order.cs" Line="1" Column="1" />
+      <File FileName="RestaurantService/Service.cs" Line="1" Column="1" />
+      <File FileName="RestaurantTests/ServiceTest.cs" Line="1" Column="1" />
+      <File FileName="RestaurantApp/RestaurantApp.csproj" Line="16" Column="1" />
+      <File FileName="RestaurantApp/wwwroot/js/site.js" Line="1" Column="1" />
+      <File FileName="RestaurantApp/appsettings.json" Line="11" Column="1" />
+      <File FileName="RestaurantApp/Program.cs" Line="1" Column="1" />
+      <File FileName="RestaurantApp/Startup.cs" Line="19" Column="10" />
+      <File FileName="RestaurantApp/Views/Home/Privacy.cshtml" Line="4" Column="11" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Restaurant" expanded="True">
+            <Node name="RestaurantApp" expanded="True" selected="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="js" expanded="True" />
+                <Node name="lib" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="RestaurantModels" expanded="True" />
+            <Node name="RestaurantService" expanded="True" />
+            <Node name="RestaurantTests" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+                <Node name="ProjectDependencies" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Restaurant" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.RestaurantApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
